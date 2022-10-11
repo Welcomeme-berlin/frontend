@@ -9,3 +9,7 @@
     @apply font-[Montserrat];
   }
 }
+
+.bg-img {
+  background-image: url("./assets/accBackground.png");
+}

@@ -1,10 +1,13 @@
 import React from "react";
+import Landingpage from "./components/Landingpage";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline text-center m-8">Welcome Me Frontend.</h1>
-    </div>
+    <>
+      <Navbar />
+      <Landingpage />
+    </>
   );
 }
 
