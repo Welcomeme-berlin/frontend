@@ -1,13 +1,14 @@
 import React from "react";
-import Landingpage from "./components/Landingpage";
-import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/homePage";
+import Signup from "./pages/signup";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Landingpage />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/signup" element={<Signup />} />
+    </Routes>
   );
 }
 
