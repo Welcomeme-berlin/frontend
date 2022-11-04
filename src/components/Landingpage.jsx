@@ -8,29 +8,13 @@ import Visa from "../assets/logos_visaelectron.png";
 import Coinbase from "../assets/Vector-1.png";
 import { FcCheckmark } from "react-icons/fc";
 import Footer from "./Footer";
+import SliderComponent from "./Slider";
 
 const Landingpage = () => {
   return (
     <>
       <div className="w-full h-full">
-        <div className="w-full flex items-center justify-around bg-img bg-cover bg-center">
-          <div className="m-4">
-            <p className="text-6xl font-semibold ">
-              House hunting
-              <br /> made <font color="#d38019"> easy </font> for you!
-            </p>
-            <p className="mt-6 text-2xl text-[#555351]">
-              We ease your stress of hunting for houses even
-              <br /> before you get into Germany.
-            </p>
-            <button className="mt-14 bg-[#343331] text-white text-2xl w-[291px] h-20 border rounded-[15px]">
-              Get Started
-            </button>
-          </div>
-          <div className="w-[552px] h-[552px] mt-4">
-            <img src={House} alt="house" />
-          </div>
-        </div>
+        <SliderComponent />
         <div className="w-full h-[166px] bg-[#edede9] flex items-center justify-evenly">
           <img src={Mastercard} alt="/" className="w-[114px] h-[75px]" />
           <img src={Airbnb} alt="/" className="w-[208px] h-[66px]" />
