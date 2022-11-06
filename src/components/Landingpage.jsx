@@ -1,5 +1,4 @@
 import React from "react";
-import House from "../assets/househunt.png";
 import Mastercard from "../assets/logos_mastercard.png";
 import Airbnb from "../assets/Vector.png";
 import Paypal from "../assets/logos_paypal.png";
@@ -9,13 +8,14 @@ import Coinbase from "../assets/Vector-1.png";
 import { FcCheckmark } from "react-icons/fc";
 import Footer from "./Footer";
 import SliderComponent from "./Slider";
+import Testimonials from "./TestimonialSlide";
 
 const Landingpage = () => {
   return (
     <>
       <div className="w-full h-full">
         <SliderComponent />
-        <div className="w-full h-[166px] bg-[#edede9] flex items-center justify-evenly">
+        <div className="w-full h-[166px] bg-[#edede9] flex items-center justify-evenly mt-20">
           <img src={Mastercard} alt="/" className="w-[114px] h-[75px]" />
           <img src={Airbnb} alt="/" className="w-[208px] h-[66px]" />
           <img src={Paypal} alt="/" className="w-[78px] h-[90px]" />
@@ -156,6 +156,10 @@ const Landingpage = () => {
               Get started
             </div>
           </div>
+        </div>
+        <Testimonials />
+        <div className="font-semibold text-4xl flex items-center justify-center">
+          Frequently Asked Questions
         </div>
         <Footer />
       </div>

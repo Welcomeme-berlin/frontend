@@ -1,18 +1,15 @@
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
 import House from "../assets/househunt.png";
 import Doctors from "../assets/doctors.png";
 import Wallet from "../assets/e-wallet.png";
 import People from "../assets/tutorial.png";
 import Robot from "../assets/robot.png";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-
-// import required modules
-import { Navigation } from "swiper";
-
-export default function SliderComponent() {
+const SliderComponent = () => {
   return (
     <>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
@@ -129,4 +126,5 @@ export default function SliderComponent() {
       </Swiper>
     </>
   );
-}
+};
+export default SliderComponent;
