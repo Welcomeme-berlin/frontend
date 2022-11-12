@@ -1,5 +1,4 @@
 import React from "react";
-import House from "../assets/househunt.png";
 import Mastercard from "../assets/logos_mastercard.png";
 import Airbnb from "../assets/Vector.png";
 import Paypal from "../assets/logos_paypal.png";
@@ -9,6 +8,7 @@ import Coinbase from "../assets/Vector-1.png";
 import { FcCheckmark } from "react-icons/fc";
 import Footer from "./Footer";
 import SliderComponent from "./Slider";
+import Testimonials from "./TestimonialSlide";
 
 const Landingpage = () => {
   return (
@@ -157,6 +157,7 @@ const Landingpage = () => {
             </div>
           </div>
         </div>
+        <Testimonials />
         <Footer />
       </div>
     </>
