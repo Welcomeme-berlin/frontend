@@ -9,6 +9,7 @@ import { FcCheckmark } from "react-icons/fc";
 import Footer from "./Footer";
 import SliderComponent from "./Slider";
 import Testimonials from "./TestimonialSlide";
+import AccordionComponent from "./Accordion";
 
 const Landingpage = () => {
   return (
@@ -158,6 +159,7 @@ const Landingpage = () => {
           </div>
         </div>
         <Testimonials />
+        <AccordionComponent />
         <Footer />
       </div>
     </>
