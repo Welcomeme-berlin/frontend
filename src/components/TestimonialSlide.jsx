@@ -11,7 +11,7 @@ const Testimonials = () => {
     <>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
-          <div className="flex items-center justify-center my-20">
+          <div className="flex items-center justify-center">
             <div className="w-[353px] h-[628px] flex items-center justify-center mr-10">
               <img src={Damilare} alt="house" />
             </div>
@@ -32,7 +32,7 @@ const Testimonials = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex items-center justify-center my-20">
+          <div className="flex items-center justify-center">
             <div className="w-[353px] h-[628px] flex items-center justify-center mr-10">
               <img src={Damilare} alt="house" />
             </div>

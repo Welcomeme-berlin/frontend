@@ -34,7 +34,7 @@ const AccordionComponent = () => {
       <Accordion
         open={open === 1}
         icon={<Icon id={1} open={open} />}
-        className="mx-10 my-4"
+        className="mx-4 my-4 lg:flex flex-col items-center justify-center"
       >
         <AccordionHeader
           onClick={() => handleOpen(1)}
@@ -53,7 +53,7 @@ const AccordionComponent = () => {
       <Accordion
         open={open === 2}
         icon={<Icon id={2} open={open} />}
-        className="mx-10 my-4"
+        className="mx-4 my-4 lg:flex flex-col items-center justify-center"
       >
         <AccordionHeader
           onClick={() => handleOpen(2)}
@@ -72,7 +72,7 @@ const AccordionComponent = () => {
       <Accordion
         open={open === 3}
         icon={<Icon id={3} open={open} />}
-        className="mx-10 my-4"
+        className="mx-4 my-4 lg:flex flex-col items-center justify-center"
       >
         <AccordionHeader
           onClick={() => handleOpen(3)}

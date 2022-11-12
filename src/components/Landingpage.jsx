@@ -158,7 +158,13 @@ const Landingpage = () => {
             </div>
           </div>
         </div>
+        <div className="flex items-center justify-center font-semibold text-4xl mt-20">
+          Testimonials
+        </div>
         <Testimonials />
+        <div className="flex items-center justify-center font-semibold text-4xl mb-4">
+          Frequently Asked Questions
+        </div>
         <AccordionComponent />
         <Footer />
       </div>
