@@ -1,7 +1,7 @@
-import React from "react";
-import { FcGoogle } from "react-icons/fc";
-import { SiFacebook } from "react-icons/si";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { FcGoogle } from 'react-icons/fc';
+import { SiFacebook } from 'react-icons/si';
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
   return (
