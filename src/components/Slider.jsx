@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 export default function SliderComponent() {
   return (
@@ -28,14 +29,18 @@ export default function SliderComponent() {
                 We ease your stress of hunting for houses even
                 <br /> before you get into Germany.
               </p>
-              <Button
-                text="Login"
-                style="w-[265px] h-[70px] bg-[#FAE7CF] border rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold mr-4"
-              />
-              <Button
-                text="Sign Up"
-                style="w-[265px] h-[70px] bg-[#D38019] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold"
-              />
+              <Link to="/login">
+                <Button
+                  text="Login"
+                  style="w-[265px] h-[70px] bg-[#FAE7CF] border rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold mr-4"
+                />
+              </Link>
+              <Link to="/signup">
+                <Button
+                  text="Sign Up"
+                  style="w-[265px] h-[70px] bg-[#D38019] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold"
+                />
+              </Link>
             </div>
             <div className="w-[552px] h-[552px] mt-4">
               <img src={House} alt="house" />
