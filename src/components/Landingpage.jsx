@@ -11,7 +11,6 @@ import SliderComponent from "./Slider";
 import Testimonials from "./TestimonialSlide";
 import AccordionComponent from "./Accordion";
 import Button from "./Button";
-import Imageoverlay from "./imageOverlay";
 
 const Landingpage = () => {
   return (
@@ -63,7 +62,7 @@ const Landingpage = () => {
               </p>
             </div>
           </div>
-          <Imageoverlay />
+          <div>plans</div>
         </div>
         <div
           className="flex items-center justify-center 

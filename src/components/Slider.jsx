@@ -30,7 +30,7 @@ export default function SliderComponent() {
               </p>
               <Button
                 text="Login"
-                style="w-[265px] h-[70px] bg-[#FAE7CF] border rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold"
+                style="w-[265px] h-[70px] bg-[#FAE7CF] border rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold mr-4"
               />
               <Button
                 text="Sign Up"
@@ -54,9 +54,14 @@ export default function SliderComponent() {
                 <br /> the requirement for Visa application and others in <br />{" "}
                 an easy catch just for you
               </p>
-              <button className="mt-14 bg-[#343331] text-white text-2xl w-[291px] h-20 border rounded-[15px]">
-                Get Started
-              </button>
+              <Button
+                text="Login"
+                style="w-[265px] h-[70px] bg-[#FAE7CF] border rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold mr-4"
+              />
+              <Button
+                text="Sign Up"
+                style="w-[265px] h-[70px] bg-[#D38019] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold"
+              />
             </div>
             <div className="w-[364px] h-[552px] mt-4">
               <img src={Doctors} alt="house" />
@@ -79,9 +84,14 @@ export default function SliderComponent() {
                 <br /> faster pace through German bureacracy in just <br /> one
                 click
               </p>
-              <button className="mt-14 bg-[#343331] text-white text-2xl w-[291px] h-20 border rounded-[15px]">
-                Get Started
-              </button>
+              <Button
+                text="Login"
+                style="w-[265px] h-[70px] bg-[#FAE7CF] border rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold mr-4"
+              />
+              <Button
+                text="Sign Up"
+                style="w-[265px] h-[70px] bg-[#D38019] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold"
+              />
             </div>
             <div className="w-[433px] h-[433px] mt-4">
               <img src={Wallet} alt="house" />
@@ -101,9 +111,14 @@ export default function SliderComponent() {
                 <br /> faster pace through German bureacracy in just <br /> one
                 click
               </p>
-              <button className="mt-14 bg-[#343331] text-white text-2xl w-[291px] h-20 border rounded-[15px]">
-                Get Started
-              </button>
+              <Button
+                text="Login"
+                style="w-[265px] h-[70px] bg-[#FAE7CF] border rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold mr-4"
+              />
+              <Button
+                text="Sign Up"
+                style="w-[265px] h-[70px] bg-[#D38019] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold"
+              />
             </div>
             <div className="w-[401px] h-[529px] mt-4">
               <img src={People} alt="house" />
@@ -123,9 +138,14 @@ export default function SliderComponent() {
                 <br /> faster pace through German bureacracy in just <br /> one
                 click
               </p>
-              <button className="mt-14 bg-[#343331] text-white text-2xl w-[291px] h-20 border rounded-[15px]">
-                Get Started
-              </button>
+              <Button
+                text="Login"
+                style="w-[265px] h-[70px] bg-[#FAE7CF] border rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold mr-4"
+              />
+              <Button
+                text="Sign Up"
+                style="w-[265px] h-[70px] bg-[#D38019] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold"
+              />
             </div>
             <div className="w-[346px] h-[531px] mt-4">
               <img src={Robot} alt="house" />
