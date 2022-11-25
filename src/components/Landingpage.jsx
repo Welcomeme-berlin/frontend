@@ -5,13 +5,15 @@ import Paypal from "../assets/logos_paypal.png";
 import Uber from "../assets/simple-icons_uber.png";
 import Visa from "../assets/logos_visaelectron.png";
 import Coinbase from "../assets/Vector-1.png";
-import { FcCheckmark } from "react-icons/fc";
+import { MdCategory } from "react-icons/md";
+import { GiPriceTag } from "react-icons/gi";
+import { BsArrowRight, BsGiftFill } from "react-icons/bs";
 import Footer from "./Footer";
 import SliderComponent from "./Slider";
 import Testimonials from "./TestimonialSlide";
 import AccordionComponent from "./Accordion";
-import Button from "./Button";
-import Imageoverlay from "./imageOverlay";
+import TypeA from "../assets/typeA.png";
+import TypeB from "../assets/typeB.png";
 
 const Landingpage = () => {
   return (
@@ -56,120 +58,121 @@ const Landingpage = () => {
               process into one perfect solution.
             </p>
           </div>
-          <div>
-            <div className="h-[56px] my-8">
-              <p className="paymentPlans">
-                Payment <font color="#d38019">Plans</font>
-              </p>
+          <div className="font-bold text-4xl my-10">
+            Payment <font color="#d38019">Plans</font>
+          </div>
+          <div className="relative mb-[100px]">
+            <div>
+              <img src={TypeA} alt="Category A" />
+            </div>
+            <div className="absolute w-[578px] h-full bg-white top-[104px] right-[104px] shadow-lg flex flex-col">
+              <div className="text-center bg-[#c4c4c4] h-20 font-medium text-3xl p-4">
+                Type A
+              </div>
+              <div className="mx-6 my-4 p-4">
+                <div className="flex">
+                  <MdCategory size={40} color="#d38019" className="mr-2" />
+                  <div className="flex-col">
+                    <p className="font-medium text-2xl">Category</p>
+                    <p className="font-normal">
+                      For University students below 30 years of age.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex my-4">
+                  <BsGiftFill size={40} color="#d38019" className="mr-2" />
+                  <div className="flex-col">
+                    <p className="font-medium text-2xl">Package</p>
+                    <ul className="list-decimal p-2">
+                      <li>Travel insurance (Visa requirement).</li>
+                      <li className="p-2">
+                        Private health insurance (Required for your visa and
+                        stay in Germany).
+                      </li>
+                      <li className="p-2">Sim card purchase & consultancy.</li>
+                      <li className="p-2">10% discount on German school.</li>
+                      <li className="p-2">
+                        Aid in getting BAfoG (A German government grant & loan
+                        for students - not applicable to PHD students).
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="flex">
+                  <GiPriceTag size={40} color="#d38019" className="mr-2" />
+                  <div className="flex-col">
+                    <p className="font-medium text-2xl">Price</p>
+                    <p className="font-normal">
+                      39.9 Euro opening fee, then 3.99 Euro monthly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex w-[216px] h-[60px] items-center justify-center bg-[#FFF4E6] rounded-lg text-[#d38019] text-xl font-medium relative left-[341px] mb-2">
+                Get Started
+                <BsArrowRight size={15} className="ml-2" />
+              </div>
             </div>
           </div>
-          <Imageoverlay />
+          <div className="relative">
+            <div>
+              <img src={TypeB} alt="Category B" />
+            </div>
+            <div className="absolute w-[578px] h-full bg-white top-[104px] left-[104px] shadow-lg flex flex-col">
+              <div className="text-center bg-[#c4c4c4] h-20 font-medium text-3xl p-4">
+                Type B
+              </div>
+              <div className="mx-6 my-4 p-4">
+                <div className="flex">
+                  <MdCategory size={40} color="#d38019" className="mr-2" />
+                  <div className="flex-col">
+                    <p className="font-medium text-2xl">Category</p>
+                    <p className="font-normal">
+                      For University students above 30 years of age, PHD
+                      students, visitors of a studentkolleg.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex my-4">
+                  <BsGiftFill size={40} color="#d38019" className="mr-2" />
+                  <div className="flex-col">
+                    <p className="font-medium text-2xl">Package</p>
+                    <ul className="list-decimal p-2">
+                      <li>Travel insurance (Visa requirement).</li>
+                      <li className="p-2">
+                        Private health insurance (Required for your visa and
+                        stay in Germany).
+                      </li>
+                      <li className="p-2">Sim card purchase & consultancy.</li>
+                      <li className="p-2">10% discount on German school.</li>
+                      <li className="p-2">
+                        Aid in getting BAfoG (A German government grant & loan
+                        for students - not applicable to PHD students).
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="flex">
+                  <GiPriceTag size={40} color="#d38019" className="mr-2" />
+                  <div className="flex-col">
+                    <p className="font-medium text-2xl">Price</p>
+                    <p className="font-normal">
+                      59.9 Euro opening fee, then 4.99 Euro monthly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex w-[216px] h-[60px] items-center justify-center bg-[#FFF4E6] rounded-lg text-[#d38019] text-xl font-medium relative left-[341px] mb-2">
+                Get Started
+                <BsArrowRight size={15} className="ml-2" />
+              </div>
+            </div>
+          </div>
         </div>
         <div
           className="flex items-center justify-center 
         m-4"
-        >
-          <div className="w-[461px] h-[581px] border rounded-[15px] bg-[#e7e9e8] shadow-xl flex flex-col items-center justify-center mr-2 hover:bg-[#343331] hover:text-white hover:h-[660px]">
-            <p className="text-2xl font-semibold">Basic Plan</p>
-            <div className="w-[385px] border border-[#343331] hover:border-[#ffff]"></div>
-            <div className="flex m-4">
-              <div className="w-6 h-6 mr-2">
-                <FcCheckmark size={20} />
-              </div>
-              <div className="text-xl w-[192px]">Basic plan features</div>
-            </div>
-            <div className="flex m-4">
-              <div className="w-6 h-6 mr-2">
-                <FcCheckmark size={20} />
-              </div>
-              <div className="text-xl w-[192px]">Health Insurance</div>
-            </div>
-            <div className="flex m-4">
-              <div className="w-6 h-6 mr-2">
-                <FcCheckmark size={20} />
-              </div>
-              <div className="text-xl w-[300px]">Blocked account provision</div>
-            </div>
-            <div className="flex m-4">
-              <div className="w-6 h-6 mr-2">
-                <FcCheckmark size={20} />
-              </div>
-              <div className="text-xl w-[320px]">
-                Free German language tutorials
-              </div>
-            </div>
-            <div className="w-[265px] h-[70px] bg-[#343331] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold">
-              Get started
-            </div>
-            <Button text="Get started" />
-          </div>
-          <div className="w-[461px] h-[581px] border rounded-[15px] bg-[#e7e9e8] shadow-xl flex flex-col items-center justify-center mr-2 hover:bg-[#343331] hover:text-white hover:h-[660px]">
-            <p className="text-2xl font-semibold">Basic Plan</p>
-            <div className="w-[385px] border border-[#343331] hover:border-[#ffff]"></div>
-            <div className="flex m-4">
-              <div className="w-6 h-6 mr-2">
-                <FcCheckmark size={20} />
-              </div>
-              <div className="text-xl w-[192px]">Basic plan features</div>
-            </div>
-            <div className="flex m-4">
-              <div className="w-6 h-6 mr-2">
-                <FcCheckmark size={20} />
-              </div>
-              <div className="text-xl w-[192px]">Health Insurance</div>
-            </div>
-            <div className="flex m-4">
-              <div className="w-6 h-6 mr-2">
-                <FcCheckmark size={20} />
-              </div>
-              <div className="text-xl w-[300px]">Blocked account provision</div>
-            </div>
-            <div className="flex m-4">
-              <div className="w-6 h-6 mr-2">
-                <FcCheckmark size={20} />
-              </div>
-              <div className="text-xl w-[320px]">
-                Free German language tutorials
-              </div>
-            </div>
-            <div className="w-[265px] h-[70px] bg-[#343331] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold">
-              Get started
-            </div>
-          </div>
-          <div className="w-[461px] h-[581px] border rounded-[15px] bg-[#e7e9e8] shadow-xl flex flex-col items-center justify-center mr-2 hover:bg-[#343331] hover:text-white hover:h-[660px]">
-            <p className="text-2xl font-semibold">Basic Plan</p>
-            <div className="w-[385px] border border-[#343331] hover:border-[#ffff]"></div>
-            <div className="flex m-4">
-              <div className="w-6 h-6 mr-2">
-                <FcCheckmark size={20} />
-              </div>
-              <div className="text-xl w-[192px]">Basic plan features</div>
-            </div>
-            <div className="flex m-4">
-              <div className="w-6 h-6 mr-2">
-                <FcCheckmark size={20} />
-              </div>
-              <div className="text-xl w-[192px]">Health Insurance</div>
-            </div>
-            <div className="flex m-4">
-              <div className="w-6 h-6 mr-2">
-                <FcCheckmark size={20} />
-              </div>
-              <div className="text-xl w-[300px]">Blocked account provision</div>
-            </div>
-            <div className="flex m-4">
-              <div className="w-6 h-6 mr-2">
-                <FcCheckmark size={20} />
-              </div>
-              <div className="text-xl w-[320px]">
-                Free German language tutorials
-              </div>
-            </div>
-            <div className="w-[265px] h-[70px] bg-[#343331] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold">
-              Get started
-            </div>
-          </div>
-        </div>
+        ></div>
         <div className="flex items-center justify-center font-semibold text-4xl mt-20">
           Testimonials
         </div>
