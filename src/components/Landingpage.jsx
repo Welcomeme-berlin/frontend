@@ -10,6 +10,8 @@ import Footer from "./Footer";
 import SliderComponent from "./Slider";
 import Testimonials from "./TestimonialSlide";
 import AccordionComponent from "./Accordion";
+import Button from "./Button";
+import Imageoverlay from "./imageOverlay";
 
 const Landingpage = () => {
   return (
@@ -31,6 +33,7 @@ const Landingpage = () => {
             </p>
           </div>
           <div className="mx-8 w-[1220px] h-[470px]">
+            <p className="text-center">Values</p>
             <p className="text-2xl text-[#171611] text-center">
               We are tailored to creating a pathbreaking digital assistant for
               both students and young
@@ -53,6 +56,14 @@ const Landingpage = () => {
               process into one perfect solution.
             </p>
           </div>
+          <div>
+            <div className="h-[56px] my-8">
+              <p className="paymentPlans">
+                Payment <font color="#d38019">Plans</font>
+              </p>
+            </div>
+          </div>
+          <Imageoverlay />
         </div>
         <div
           className="flex items-center justify-center 
@@ -90,6 +101,7 @@ const Landingpage = () => {
             <div className="w-[265px] h-[70px] bg-[#343331] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold">
               Get started
             </div>
+            <Button text="Get started" />
           </div>
           <div className="w-[461px] h-[581px] border rounded-[15px] bg-[#e7e9e8] shadow-xl flex flex-col items-center justify-center mr-2 hover:bg-[#343331] hover:text-white hover:h-[660px]">
             <p className="text-2xl font-semibold">Basic Plan</p>

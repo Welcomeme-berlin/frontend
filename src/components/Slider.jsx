@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Navigation } from "swiper";
+import Button from "./Button";
 
 export default function SliderComponent() {
   return (
@@ -27,9 +28,14 @@ export default function SliderComponent() {
                 We ease your stress of hunting for houses even
                 <br /> before you get into Germany.
               </p>
-              <button className="mt-14 bg-[#343331] text-white text-2xl w-[291px] h-20 border rounded-[15px]">
-                Get Started
-              </button>
+              <Button
+                text="Login"
+                style="w-[265px] h-[70px] bg-[#FAE7CF] border rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold"
+              />
+              <Button
+                text="Sign Up"
+                style="w-[265px] h-[70px] bg-[#D38019] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold"
+              />
             </div>
             <div className="w-[552px] h-[552px] mt-4">
               <img src={House} alt="house" />
