@@ -5,7 +5,9 @@ import Paypal from "../assets/logos_paypal.png";
 import Uber from "../assets/simple-icons_uber.png";
 import Visa from "../assets/logos_visaelectron.png";
 import Coinbase from "../assets/Vector-1.png";
-import { FcCheckmark } from "react-icons/fc";
+import { MdCategory } from "react-icons/md";
+import { GiPriceTag } from "react-icons/gi";
+import { BsArrowRight, BsGiftFill } from "react-icons/bs";
 import Footer from "./Footer";
 import SliderComponent from "./Slider";
 import Testimonials from "./TestimonialSlide";
@@ -67,17 +69,103 @@ const Landingpage = () => {
               <div className="text-center bg-[#c4c4c4] h-20 font-medium text-3xl p-4">
                 Type A
               </div>
-              {/* <div className="bg-green-700">
-                vbkkbnkgnbkdfnkj
-              </div> */}
+              <div className="mx-6 my-4 p-4">
+                <div className="flex">
+                  <MdCategory size={40} color="#d38019" className="mr-2" />
+                  <div className="flex-col">
+                    <p className="font-medium text-2xl">Category</p>
+                    <p className="font-normal">
+                      For University students below 30 years of age.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex my-4">
+                  <BsGiftFill size={40} color="#d38019" className="mr-2" />
+                  <div className="flex-col">
+                    <p className="font-medium text-2xl">Package</p>
+                    <ul className="list-decimal p-2">
+                      <li>Travel insurance (Visa requirement).</li>
+                      <li className="p-2">
+                        Private health insurance (Required for your visa and
+                        stay in Germany).
+                      </li>
+                      <li className="p-2">Sim card purchase & consultancy.</li>
+                      <li className="p-2">10% discount on German school.</li>
+                      <li className="p-2">
+                        Aid in getting BAfoG (A German government grant & loan
+                        for students - not applicable to PHD students).
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="flex">
+                  <GiPriceTag size={40} color="#d38019" className="mr-2" />
+                  <div className="flex-col">
+                    <p className="font-medium text-2xl">Price</p>
+                    <p className="font-normal">
+                      39.9 Euro opening fee, then 3.99 Euro monthly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex w-[216px] h-[60px] items-center justify-center bg-[#FFF4E6] rounded-lg text-[#d38019] text-xl font-medium relative left-[341px] mb-2">
+                Get Started
+                <BsArrowRight size={15} className="ml-2" />
+              </div>
             </div>
           </div>
           <div className="relative">
             <div>
               <img src={TypeB} alt="Category B" />
             </div>
-            <div className="absolute w-[578px] h-full bg-white top-[104px] left-[104px] shadow-lg">
-              hdbuknukcf
+            <div className="absolute w-[578px] h-full bg-white top-[104px] left-[104px] shadow-lg flex flex-col">
+              <div className="text-center bg-[#c4c4c4] h-20 font-medium text-3xl p-4">
+                Type B
+              </div>
+              <div className="mx-6 my-4 p-4">
+                <div className="flex">
+                  <MdCategory size={40} color="#d38019" className="mr-2" />
+                  <div className="flex-col">
+                    <p className="font-medium text-2xl">Category</p>
+                    <p className="font-normal">
+                      For University students above 30 years of age, PHD
+                      students, visitors of a studentkolleg.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex my-4">
+                  <BsGiftFill size={40} color="#d38019" className="mr-2" />
+                  <div className="flex-col">
+                    <p className="font-medium text-2xl">Package</p>
+                    <ul className="list-decimal p-2">
+                      <li>Travel insurance (Visa requirement).</li>
+                      <li className="p-2">
+                        Private health insurance (Required for your visa and
+                        stay in Germany).
+                      </li>
+                      <li className="p-2">Sim card purchase & consultancy.</li>
+                      <li className="p-2">10% discount on German school.</li>
+                      <li className="p-2">
+                        Aid in getting BAfoG (A German government grant & loan
+                        for students - not applicable to PHD students).
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="flex">
+                  <GiPriceTag size={40} color="#d38019" className="mr-2" />
+                  <div className="flex-col">
+                    <p className="font-medium text-2xl">Price</p>
+                    <p className="font-normal">
+                      59.9 Euro opening fee, then 4.99 Euro monthly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex w-[216px] h-[60px] items-center justify-center bg-[#FFF4E6] rounded-lg text-[#d38019] text-xl font-medium relative left-[341px] mb-2">
+                Get Started
+                <BsArrowRight size={15} className="ml-2" />
+              </div>
             </div>
           </div>
         </div>
