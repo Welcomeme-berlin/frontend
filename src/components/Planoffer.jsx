@@ -1,3 +1,4 @@
+import List from "./List";
 const Planoffer = ({ offers }) => {
   return (
     <div>
@@ -12,7 +13,7 @@ const Planoffer = ({ offers }) => {
             </div>
             <div className="w-100%">
               <h3>{part.title}</h3>
-              <p>{part.details[0]}</p>
+              <List items={part.details} />
             </div>
           </div>
         );
