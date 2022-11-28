@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Mastercard from "../assets/logos_mastercard.png";
 import Airbnb from "../assets/Vector.png";
 import Paypal from "../assets/logos_paypal.png";
@@ -109,7 +110,7 @@ const Landingpage = () => {
                 </div>
               </div>
               <div className="flex w-[216px] h-[60px] items-center justify-center bg-[#FFF4E6] rounded-lg text-[#d38019] text-xl font-medium relative left-[341px] mb-2">
-                Get Started
+                <Link to="/signup">Get Started</Link>
                 <BsArrowRight size={15} className="ml-2" />
               </div>
             </div>
@@ -163,7 +164,7 @@ const Landingpage = () => {
                 </div>
               </div>
               <div className="flex w-[216px] h-[60px] items-center justify-center bg-[#FFF4E6] rounded-lg text-[#d38019] text-xl font-medium relative left-[341px] mb-2">
-                Get Started
+                <Link to="/signup">Get Started</Link>
                 <BsArrowRight size={15} className="ml-2" />
               </div>
             </div>
