@@ -78,7 +78,7 @@ const AccordionComponent = () => {
           onClick={() => handleOpen(3)}
           className="w-[1200px] h-[100px] border rounded-[30px] p-10 shadow-lg font-medium text-[#6d7276] uppercase"
         >
-          03 German blocked account
+          03 German bank account
         </AccordionHeader>
         <AccordionBody>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
