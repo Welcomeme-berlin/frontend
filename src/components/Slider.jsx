@@ -21,24 +21,23 @@ export default function SliderComponent() {
         <SwiperSlide>
           <div className="w-full flex items-center justify-around bg-img bg-cover bg-center">
             <div className="m-4">
-              <p className="text-6xl font-semibold ">
-                House hunting
-                <br /> made <font color="#d38019"> easy </font> for you!
-              </p>
-              <p className="mt-6 text-2xl text-[#555351]">
-                We ease your stress of hunting for houses even
-                <br /> before you get into Germany.
-              </p>
+              <div className="w-[617px] h-[156px] mx-4 p-2 text-6xl font-semibold ">
+                House hunting made <font color="#d38019"> easy </font> for you!
+              </div>
+              <div className="w-[578px] h-[90px] mx-4 p-2 text-2xl text-[#555351]">
+                We ease your stress of hunting for houses even before you get
+                into Germany.
+              </div>
               <Link to="/login">
                 <Button
                   text="Login"
-                  style="w-[265px] h-[70px] bg-[#FAE7CF] border rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold mr-4"
+                  style="w-[291px] h-[80px] bg-[#FAE7CF] rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-10 font-medium mr-2"
                 />
               </Link>
               <Link to="/signup">
                 <Button
                   text="Sign Up"
-                  style="w-[265px] h-[70px] bg-[#D38019] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold"
+                  style="w-[291px] h-[80px] bg-[#D38019] rounded-[15px] text-white text-center text-xl py-4 relative top-10 font-medium"
                 />
               </Link>
             </div>
@@ -50,23 +49,26 @@ export default function SliderComponent() {
         <SwiperSlide>
           <div className="w-full flex items-center justify-around bg-img1 bg-cover bg-center">
             <div className="m-4">
-              <p className="text-6xl font-semibold ">
+              <div className="w-[578px] h-[156px] text-6xl font-semibold ">
                 Health insurance
-                <br /> <font color="#d38019"> secured </font> for you!
-              </p>
-              <p className="mt-6 text-2xl text-[#555351]">
-                Our health insurance package covers and attains
-                <br /> the requirement for Visa application and others in <br />{" "}
-                an easy catch just for you
-              </p>
-              <Button
-                text="Login"
-                style="w-[265px] h-[70px] bg-[#FAE7CF] border rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold mr-4"
-              />
-              <Button
-                text="Sign Up"
-                style="w-[265px] h-[70px] bg-[#D38019] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold"
-              />
+                <font color="#d38019"> secured </font> for you!
+              </div>
+              <div className="w-[578px] h-[90px] mx-4 text-2xl text-[#555351]">
+                Our health insurance package covers and attains the requirement
+                for Visa application and others in an easy catch just for you
+              </div>
+              <Link to="/login">
+                <Button
+                  text="Login"
+                  style="w-[291px] h-[80px] bg-[#FAE7CF] rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-10 font-medium mr-2"
+                />
+              </Link>
+              <Link to="/signup">
+                <Button
+                  text="Sign Up"
+                  style="w-[291px] h-[80px] bg-[#D38019] rounded-[15px] text-white text-center text-xl py-4 relative top-10 font-medium"
+                />
+              </Link>
             </div>
             <div className="w-[364px] h-[552px] mt-4">
               <img src={Doctors} alt="house" />
@@ -76,27 +78,28 @@ export default function SliderComponent() {
         <SwiperSlide>
           <div className="w-full flex items-center justify-around bg-img1 bg-cover bg-center">
             <div className="m-4">
-              <p className="text-6xl font-semibold ">
+              <div className="w-[578px] h-[156px] text-6xl font-semibold ">
                 German
-                <font color="#d38019">
-                  {" "}
-                  blocked <br /> account{" "}
-                </font>{" "}
-                provided
-              </p>
-              <p className="mt-6 text-2xl text-[#555351]">
-                Open and get your blocked account settled at a
-                <br /> faster pace through German bureacracy in just <br /> one
-                click
-              </p>
-              <Button
-                text="Login"
-                style="w-[265px] h-[70px] bg-[#FAE7CF] border rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold mr-4"
-              />
-              <Button
-                text="Sign Up"
-                style="w-[265px] h-[70px] bg-[#D38019] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold"
-              />
+                <font color="#d38019"> bank account </font>
+                provided!
+              </div>
+              <div className="w-[578px] h-[90px] mx-4 p-2 text-2xl text-[#555351]">
+                Bank on us to help you have an account with the best Bank in
+                Germany. Open and get your bank account at a faster pace in just
+                one click.
+              </div>
+              <Link to="/login">
+                <Button
+                  text="Login"
+                  style="w-[291px] h-[80px] bg-[#FAE7CF] rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-10 font-medium mr-2"
+                />
+              </Link>
+              <Link to="/signup">
+                <Button
+                  text="Sign Up"
+                  style="w-[291px] h-[80px] bg-[#D38019] rounded-[15px] text-white text-center text-xl py-4 relative top-10 font-medium"
+                />
+              </Link>
             </div>
             <div className="w-[433px] h-[433px] mt-4">
               <img src={Wallet} alt="house" />
@@ -106,24 +109,27 @@ export default function SliderComponent() {
         <SwiperSlide>
           <div className="w-full flex items-center justify-around bg-img1 bg-cover bg-center">
             <div className="m-4">
-              <p className="text-6xl font-semibold ">
-                Free German
-                <br />
+              <div className="w-[617px] h-[156px] text-6xl font-semibold ">
+                10% off German
                 <font color="#d38019"> language </font> tutorials!
-              </p>
-              <p className="mt-6 text-2xl text-[#555351]">
-                Open and get your blocked account settled at a
-                <br /> faster pace through German bureacracy in just <br /> one
-                click
-              </p>
-              <Button
-                text="Login"
-                style="w-[265px] h-[70px] bg-[#FAE7CF] border rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold mr-4"
-              />
-              <Button
-                text="Sign Up"
-                style="w-[265px] h-[70px] bg-[#D38019] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold"
-              />
+              </div>
+              <div className="w-[578px] h-[135px] mx-4 mb-2 p-2 text-2xl text-[#555351]">
+                We understood that moving to another country with a different
+                language comes with challenges, which is why we've made a
+                step-by-step guide to help you crush the language barrier.
+              </div>
+              <Link to="/login">
+                <Button
+                  text="Login"
+                  style="w-[291px] h-[80px] bg-[#FAE7CF] rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-10 font-medium mr-2"
+                />
+              </Link>
+              <Link to="/signup">
+                <Button
+                  text="Sign Up"
+                  style="w-[291px] h-[80px] bg-[#D38019] rounded-[15px] text-white text-center text-xl py-4 relative top-10 font-medium"
+                />
+              </Link>
             </div>
             <div className="w-[401px] h-[529px] mt-4">
               <img src={People} alt="house" />
@@ -133,24 +139,27 @@ export default function SliderComponent() {
         <SwiperSlide>
           <div className="w-full flex items-center justify-around bg-img1 bg-cover bg-center">
             <div className="m-4">
-              <p className="text-6xl font-semibold ">
-                Digital
-                <font color="#d38019"> companion </font> <br />
-                for your stay!
-              </p>
-              <p className="mt-6 text-2xl text-[#555351]">
-                Open and get your blocked account settled at a
-                <br /> faster pace through German bureacracy in just <br /> one
-                click
-              </p>
-              <Button
-                text="Login"
-                style="w-[265px] h-[70px] bg-[#FAE7CF] border rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold mr-4"
-              />
-              <Button
-                text="Sign Up"
-                style="w-[265px] h-[70px] bg-[#D38019] border rounded-[15px] text-white text-center text-xl py-4 relative top-20 hover:bg-white hover:text-[#343331] hover:font-semibold"
-              />
+              <div className="w-[648px] h-[156px] text-6xl font-semibold ">
+                Sim card and internet
+                <font color="#d38019"> registration </font>
+              </div>
+              <div className="w-[578px] h-[150px] mx-4 text-2xl text-[#555351]">
+                Never get disconnected from your friends and family on your
+                arrival in Germany. Get a registered prepaid Sim card with us in
+                a speed of light
+              </div>
+              <Link to="/login">
+                <Button
+                  text="Login"
+                  style="w-[291px] h-[80px] bg-[#FAE7CF] rounded-[15px] text-[#995D14] text-center text-xl py-4 relative top-10 font-medium mr-2"
+                />
+              </Link>
+              <Link to="/signup">
+                <Button
+                  text="Sign Up"
+                  style="w-[291px] h-[80px] bg-[#D38019] rounded-[15px] text-white text-center text-xl py-4 relative top-10 font-medium"
+                />
+              </Link>
             </div>
             <div className="w-[346px] h-[531px] mt-4">
               <img src={Robot} alt="house" />
