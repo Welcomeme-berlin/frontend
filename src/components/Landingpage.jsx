@@ -1,20 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Mastercard from "../assets/logos_mastercard.png";
-import Airbnb from "../assets/Vector.png";
-import Paypal from "../assets/logos_paypal.png";
-import Uber from "../assets/simple-icons_uber.png";
-import Visa from "../assets/logos_visaelectron.png";
-import Coinbase from "../assets/Vector-1.png";
-import { MdCategory } from "react-icons/md";
-import { GiPriceTag } from "react-icons/gi";
-import { BsArrowRight, BsGiftFill } from "react-icons/bs";
-import Footer from "./Footer";
-import SliderComponent from "./Slider";
-import Testimonials from "./TestimonialSlide";
-import AccordionComponent from "./Accordion";
-import TypeA from "../assets/typeA.png";
-import TypeB from "../assets/typeB.png";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Mastercard from '../assets/logos_mastercard.png';
+import Airbnb from '../assets/Vector.png';
+import Paypal from '../assets/logos_paypal.png';
+import Uber from '../assets/simple-icons_uber.png';
+import Visa from '../assets/logos_visaelectron.png';
+import Coinbase from '../assets/Vector-1.png';
+import { MdCategory } from 'react-icons/md';
+import { GiPriceTag } from 'react-icons/gi';
+import { BsArrowRight, BsGiftFill } from 'react-icons/bs';
+import Footer from './Footer';
+import SliderComponent from './Slider';
+import Testimonials from './TestimonialSlide';
+import AccordionComponent from './Accordion';
+import TypeA from '../assets/typeA.png';
+import TypeB from '../assets/typeB.png';
 
 const Landingpage = () => {
   return (
@@ -53,6 +53,7 @@ const Landingpage = () => {
               services to help you feel at home
               <br /> even while away from home.
               <br />
+              <h1>You are mad</h1>
               <br /> Our teams are customer-centric, having considered the
               stress that comes with moving into a new country, we've designed a
               robust service to minimize your stress and streamline the entire
