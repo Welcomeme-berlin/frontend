@@ -1,11 +1,20 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
-import { FcGoogle } from "react-icons/fc";
-import { SiFacebook } from "react-icons/si";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
+import { FcGoogle } from 'react-icons/fc';
+import { SiFacebook } from 'react-icons/si';
+import { useForm } from 'react-hook-form';
 
 const Login = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   const [seePassword, setSeePassword] = useState(false);
+  const onSubmit = (data) => {
+    console.log(data);
+  };
   const handleToggle = () => {
     setSeePassword(!seePassword);
   };
@@ -13,7 +22,10 @@ const Login = () => {
     <>
       <div className="w-full h-screen flex items-center justify-center">
         <div className="w-[500px] h-[650px] flex flex-col border rounded-[20px] bg-white shadow-2xl">
-          <div className="text-center font-bold text-2xl relative top-10">
+          <div
+            className="text-center font-bold text-2xl relative top-10"
+            id="test-id"
+          >
             Login <font color="#d38019">into your </font> account
           </div>
           <div className="w-[400px] relative top-20 my-2 mx-10">
@@ -27,8 +39,19 @@ const Login = () => {
                 </label>
                 <input
                   type="email"
+                  {...register('email', {
+                    required: true,
+                    pattern:
+                      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                  })}
                   className="w-[400px] h-10 border-b border-[#d38019] text-gray-700 px-4 py-2 mt-2 focus:outline-none rounded-lg"
                 />
+                {errors.email && (
+                  <p>
+                    You have not entered any emails, or have entered a wrong
+                    pattern
+                  </p>
+                )}
               </div>
               <div className="relative">
                 <div className="my-4">
@@ -39,9 +62,20 @@ const Login = () => {
                     Password
                   </label>
                   <input
-                    type={seePassword === false ? "password" : "text"}
+                    type={seePassword === false ? 'password' : 'text'}
+                    {...register('password', {
+                      required: true,
+                      pattern: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$/,
+                    })}
                     className="w-[400px] h-10 border-b border-[#d38019] text-gray-700 px-4 py-2 mt-2 focus:outline-none rounded-lg"
                   />
+                  {errors.password && (
+                    <p>
+                      Please check the Password: A valid password should contain
+                      one Capital Letter, one Small Letter, and the number of
+                      characters should be between 6 to 15
+                    </p>
+                  )}
                 </div>
                 <div className="text-2xl text-gray-500 absolute top-[62px] right-5">
                   {seePassword === false ? (
@@ -56,6 +90,7 @@ const Login = () => {
               </div>
               <div className="mt-6 flex flex-col items-center justify-center">
                 <button
+                  onClick={handleSubmit(onSubmit)}
                   className="w-[450px] h-[58px] px-4 py-2 tracking-wide text-white text-xl font-medium bg-[#D38019] rounded-lg  focus:outline-none 
                 relative left-4"
                 >
