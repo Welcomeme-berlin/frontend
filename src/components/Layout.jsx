@@ -22,19 +22,23 @@ const Layout = ({ children }) => {
     {
       title: "My apartments",
       icon: <BiHomeAlt />,
-      path: "/application",
+      // path: "/application",
       submenu: true,
       submenuItems: [
         {
-          title: "FCUBS",
+          title: "Rent apartments",
           path: "https://premiumfcubs.premiumtrustbank.com/FCJNeoWeb",
         },
         {
-          title: "OBIEE",
+          title: "List apartments",
           path: "http://obiee.premiumtrustbank.com:9502/xmlpserver",
         },
         {
-          title: "NIBSS Document Verification Portal",
+          title: "Manage apartments",
+          path: "https://172.18.5.50/",
+        },
+        {
+          title: "Transactions",
           path: "https://172.18.5.50/",
         },
       ],
@@ -83,11 +87,11 @@ const Layout = ({ children }) => {
           )}
         </li>
         {menu.submenu && submenuOpen && open && (
-          <ul>
+          <ul className="flex flex-col items-center p-2">
             {menu.submenuItems.map((submenuItem, index) => (
               <li
                 key={index}
-                className="text-[#9B9CA0] flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg-red-600 hover:text-white hover:font-semibold rounded-md mt-2"
+                className="flex items-center gap-x-4 cursor-pointer p-2 px-5 text-white font-medium rounded-md mt-2"
               >
                 {submenuItem.title}
               </li>
