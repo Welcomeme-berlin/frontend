@@ -13,7 +13,7 @@ const DashboardRoute = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/rent-apartments" element={<RentApartment />} />
           <Route path="/list-apartments" element={<ListApartment />} />
-          <Route path="/manage-apartments" element={<ListApartment />} />
+          <Route path="/manage-apartments" element={<RentApartment />} />
           <Route path="/transactions" element={<ListApartment />} />
         </Routes>
       </Layout>
