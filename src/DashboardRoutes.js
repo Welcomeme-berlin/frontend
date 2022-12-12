@@ -11,8 +11,10 @@ const DashboardRoute = () => {
       <Layout>
         <Routes>
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/rent-apartment" element={<RentApartment />} />
-          <Route path="/list-apartment" element={<ListApartment />} />
+          <Route path="/rent-apartments" element={<RentApartment />} />
+          <Route path="/list-apartments" element={<ListApartment />} />
+          <Route path="/manage-apartments" element={<ListApartment />} />
+          <Route path="/transactions" element={<ListApartment />} />
         </Routes>
       </Layout>
     </div>
