@@ -152,7 +152,8 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </div>
-      <main className="w-full h-full mx-4 mt-28 mb-10 bg-gray-50">{children}</main>
+      <main className="w-full h-full mx-20 mt-28 mb-10 ">{children}</main> 
+      {/* bg-gray-50 - Removed from the children classname above */}
     </div>
   );
 };
