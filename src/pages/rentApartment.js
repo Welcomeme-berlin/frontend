@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Notification from "../assets/icons/notification.png";
 import room from "../assets/room.png";
 import { MdLocationPin } from "react-icons/md";
+import ApartmentDetails from '../components/ApartmentDetails';
+import {APARTMENT_DATA} from '../constants'
 
 const RentApartment = () => {
+
+  const [ id, setId] = useState("")
+
   return (
     <>
       <div className='flex justify-between items-center'>
@@ -23,13 +28,15 @@ const RentApartment = () => {
       </div>
 
       {/* Search and Filter Field Section */}
-      <div className='mt-[65px] mb-[52px] flex'>
+      <div className='mt-[45px] mb-[20px] flex'>
         <div className='mr-1'>
           <input className='w-[200px] h-[48px] p-4 border border-[#D38019] rounded' type="text" placeholder='Search' />
         </div>
         <div className='mx-[5px]'>
+
           {/* <input className='w-[200px] h-[48px] p-4 border border-[#D38019] rounded' type="text" placeholder='Search' /> */}
-          <select className='w-[152px] h-[48px] p-2 border border-[#D38019] rounded' name="location">
+
+          <select className='w-[140px] h-[48px] p-2 border border-[#D38019] rounded' name="location">
             <option value="germany">Location</option>
             <option value="germany">Germany</option>
             <option value="nigeria">Nigeria</option>
@@ -38,21 +45,21 @@ const RentApartment = () => {
           </select>
         </div>
         <div className='mx-[5px]'>
-          <select className='w-[152px] h-[48px] p-2 border border-[#D38019] rounded' name="budget">
+          <select className='w-[140px] h-[48px] p-2 border border-[#D38019] rounded' name="budget">
             <option value="val1">Budget</option>
             <option value="val2">50k - 100k</option>
             <option value="val3">1M+</option>
           </select>
         </div>
         <div className='mx-[5px] mr-2'>
-          <select className='w-[152px] h-[48px] p-2 border border-[#D38019] rounded' name="type">
+          <select className='w-[140px] h-[48px] p-2 border border-[#D38019] rounded' name="type">
             <option value="val1">Type</option>
             <option value="val2">Duplex</option>
             <option value="val3">Self-con</option>
           </select>
         </div>
         <div>
-          <select className='w-[152px] h-[48px] p-2 border border-[#D38019] rounded' name="type">
+          <select className='w-[140px] h-[48px] p-2 border border-[#D38019] rounded' name="type">
             <option value="val1">Duration</option>
             <option value="val2">2years</option>
             <option value="val3">5 years</option>
@@ -60,98 +67,22 @@ const RentApartment = () => {
         </div>
       </div>
 
-      {/* Apartment Cards */}
-      <div className='flex'>
-        <div className='mr-3'>
-          <img src={room} alt="room" />
-          <div className='flex justify-center items-center bg-[#D9D9D9] w-[195.72px] h-[38.15px]'>
-            <MdLocationPin color='#D38019' />
-            <p className='font-medium text-[8px] text-[#171611]'> Poldoski Ave, Berlin, germany.</p>
-          </div>
-        </div>
-        <div className='mx-3'>
-          <img src={room} alt="room" />
-          <div className='flex justify-center items-center bg-[#D9D9D9] w-[195.72px] h-[38.15px]'>
-            <MdLocationPin color='#D38019' />
-            <p className='font-medium text-[8px] text-[#171611]'> Poldoski Ave, Berlin, germany.</p>
-          </div>
-        </div>
-        <div className='mx-3'>
-          <img src={room} alt="room" />
-          <div className='flex justify-center items-center bg-[#D9D9D9] w-[195.72px] h-[38.15px]'>
-            <MdLocationPin color='#D38019' />
-            <p className='font-medium text-[8px] text-[#171611]'> Poldoski Ave, Berlin, germany.</p>
-          </div>
-        </div>
-        <div className='mx-3'>
-          <img src={room} alt="room" />
-          <div className='flex justify-center items-center bg-[#D9D9D9] w-[195.72px] h-[38.15px]'>
-            <MdLocationPin color='#D38019' />
-            <p className='font-medium text-[8px] text-[#171611]'> Poldoski Ave, Berlin, germany.</p>
-          </div>
-        </div>
-      </div>
-      <div className='flex my-6'>
-        <div className='mr-3'>
-          <img src={room} alt="room" />
-          <div className='flex justify-center items-center bg-[#D9D9D9] w-[195.72px] h-[38.15px]'>
-            <MdLocationPin color='#D38019' />
-            <p className='font-medium text-[8px] text-[#171611]'> Poldoski Ave, Berlin, germany.</p>
-          </div>
-        </div>
-        <div className='mx-3'>
-          <img src={room} alt="room" />
-          <div className='flex justify-center items-center bg-[#D9D9D9] w-[195.72px] h-[38.15px]'>
-            <MdLocationPin color='#D38019' />
-            <p className='font-medium text-[8px] text-[#171611]'> Poldoski Ave, Berlin, germany.</p>
-          </div>
-        </div>
-        <div className='mx-3'>
-          <img src={room} alt="room" />
-          <div className='flex justify-center items-center bg-[#D9D9D9] w-[195.72px] h-[38.15px]'>
-            <MdLocationPin color='#D38019' />
-            <p className='font-medium text-[8px] text-[#171611]'> Poldoski Ave, Berlin, germany.</p>
-          </div>
-        </div>
-        <div className='mx-3'>
-          <img src={room} alt="room" />
-          <div className='flex justify-center items-center bg-[#D9D9D9] w-[195.72px] h-[38.15px]'>
-            <MdLocationPin color='#D38019' />
-            <p className='font-medium text-[8px] text-[#171611]'> Poldoski Ave, Berlin, germany.</p>
-          </div>
-        </div>
-      </div>
-      <div className='flex'>
-        <div className='mr-3'>
-          <img src={room} alt="room" />
-          <div className='flex justify-center items-center bg-[#D9D9D9] w-[195.72px] h-[38.15px]'>
-            <MdLocationPin color='#D38019' />
-            <p className='font-medium text-[8px] text-[#171611]'> Poldoski Ave, Berlin, germany.</p>
-          </div>
-        </div>
-        <div className='mx-3'>
-          <img src={room} alt="room" />
-          <div className='flex justify-center items-center bg-[#D9D9D9] w-[195.72px] h-[38.15px]'>
-            <MdLocationPin color='#D38019' />
-            <p className='font-medium text-[8px] text-[#171611]'> Poldoski Ave, Berlin, germany.</p>
-          </div>
-        </div>
-        <div className='mx-3'>
-          <img src={room} alt="room" />
-          <div className='flex justify-center items-center bg-[#D9D9D9] w-[195.72px] h-[38.15px]'>
-            <MdLocationPin color='#D38019' />
-            <p className='font-medium text-[8px] text-[#171611]'> Poldoski Ave, Berlin, germany.</p>
-          </div>
-        </div>
-        <div className='mx-3'>
-          <img src={room} alt="room" />
-          <div className='flex justify-center items-center bg-[#D9D9D9] w-[195.72px] h-[38.15px]'>
-            <MdLocationPin color='#D38019' />
-            <p className='font-medium text-[8px] text-[#171611]'> Poldoski Ave, Berlin, germany.</p>
-          </div>
-        </div>
-      </div>
+      {/* {id ? <ApartmentDetails /> : null} */}
 
+      {/* Apartment Cards Loop*/}
+      <div className='flex flex-wrap'>
+        {
+          APARTMENT_DATA.map(apartment => (
+          <div key={apartment.id} onClick={() => setId(apartment.id)} className='my-5 mr-7'>
+            <img className='w-[170px]' src={apartment.image} alt="room" />
+            <div className='flex justify-center items-center bg-[#D9D9D9] w-[170px] h-[38.15px]'>
+              <MdLocationPin color='#D38019' />
+              <p className='font-medium text-[8px] text-[#171611]'> {apartment.name}</p>
+            </div>
+          </div>
+          ))
+        }
+      </div>
     </>
   )
 }
