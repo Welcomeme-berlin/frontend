@@ -67,13 +67,13 @@ const RentApartment = () => {
         </div>
       </div>
 
-      {/* {id ? <ApartmentDetails /> : null} */}
+      {id ? <ApartmentDetails /> : null}
 
       {/* Apartment Cards Loop*/}
       <div className='flex flex-wrap'>
         {
           APARTMENT_DATA.map(apartment => (
-          <div key={apartment.id} onClick={() => setId(apartment.id)} className='my-5 mr-7'>
+          <div key={apartment.id} onClick={() => setId(apartment.id)} className='my-5 mr-7 cursor-pointer'>
             <img className='w-[170px]' src={apartment.image} alt="room" />
             <div className='flex justify-center items-center bg-[#D9D9D9] w-[170px] h-[38.15px]'>
               <MdLocationPin color='#D38019' />
