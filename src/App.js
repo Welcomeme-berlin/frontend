@@ -4,6 +4,7 @@ import Home from "./pages/homePage";
 import Signup from "./pages/signup";
 import Login from "./pages/login";
 import ForgotPassword from "./pages/forgotPassword";
+import DashboardRoute from "./DashboardRoutes";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
       <Route path="/forgotPassword" element={<ForgotPassword />} />
+      <Route path="/*" element={<DashboardRoute />} />
     </Routes>
   );
 }
