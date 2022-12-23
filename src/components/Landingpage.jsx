@@ -1,43 +1,61 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Mastercard from '../assets/logos_mastercard.png';
-import Airbnb from '../assets/Vector.png';
-import Paypal from '../assets/logos_paypal.png';
-import Uber from '../assets/simple-icons_uber.png';
-import Visa from '../assets/logos_visaelectron.png';
-import Coinbase from '../assets/Vector-1.png';
-import { MdCategory } from 'react-icons/md';
-import { GiPriceTag } from 'react-icons/gi';
-import { BsArrowRight, BsGiftFill } from 'react-icons/bs';
-import Footer from './Footer';
-import SliderComponent from './Slider';
-import Testimonials from './TestimonialSlide';
-import AccordionComponent from './Accordion';
-import TypeA from '../assets/typeA.png';
-import TypeB from '../assets/typeB.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import Mastercard from "../assets/logos_mastercard.png";
+import Airbnb from "../assets/Vector.png";
+import Paypal from "../assets/logos_paypal.png";
+import Uber from "../assets/simple-icons_uber.png";
+import Visa from "../assets/logos_visaelectron.png";
+import Coinbase from "../assets/Vector-1.png";
+import { MdCategory } from "react-icons/md";
+import { GiPriceTag } from "react-icons/gi";
+import { BsArrowRight, BsGiftFill } from "react-icons/bs";
+import Footer from "./Footer";
+import SliderComponent from "./Slider";
+import Testimonials from "./TestimonialSlide";
+import AccordionComponent from "./Accordion";
+import TypeA from "../assets/typeA.png";
+import TypeB from "../assets/typeB.png";
 
 const Landingpage = () => {
   return (
     <>
       <div className="w-full h-full">
         <SliderComponent />
-        <div className="w-full h-[166px] bg-[#edede9] flex items-center justify-evenly">
-          <img src={Mastercard} alt="/" className="w-[114px] h-[75px]" />
-          <img src={Airbnb} alt="/" className="w-[208px] h-[66px]" />
-          <img src={Paypal} alt="/" className="w-[78px] h-[90px]" />
-          <img src={Uber} alt="/" className="w-[100px] h-[85px]" />
-          <img src={Visa} alt="/" className="w-[131px] h-[60px]" />
-          <img src={Coinbase} alt="/" className="w-[247px] h-[50px]" />
+        <div className="w-full h-[60px] md:h-[166px] bg-[#edede9] flex items-center justify-evenly animate mt-6 md:mt-0">
+          <img src={Mastercard} alt="/" className="w-[40px] md:w-[114px] h-[50px] md:h-[75px]" />
+          <img
+            src={Airbnb}
+            alt="/"
+            className="w-[88.94px] md:w-[208px] h-[28.04px] md:h-[66px]"
+          />
+          <img
+            src={Paypal}
+            alt="/"
+            className="w-[24.38px] md:w-[78px] h-[28.35px] md:h-[90px]"
+          />
+          <img
+            src={Uber}
+            alt="/"
+            className="w-[30px] md:w-[100px] h-[15px] md:h-[85px]"
+          />
+          <img
+            src={Visa}
+            alt="/"
+            className="w-[73px] md:w-[131px] h-[32.99px] md:h-[60px]"
+          />
+          <img src={Coinbase} alt="/" className="hidden md:block w-[247px] h-[50px]" />
         </div>
         <div className="flex flex-col items-center justify-center m-8 p-4">
-          <div className="h-[56px] my-6">
-            <p className=" font-bold text-4xl">
+          <div className="h-[22px] md:h-[56px] mt-6 mb-2">
+            <p className=" font-bold text-base md:text-4xl">
               Why <font color="#d38019"> WelcomeMe </font>?
             </p>
           </div>
-          <div className="mx-8 w-[1220px] h-[470px]">
-            <p className="text-center">Values</p>
-            <p className="text-2xl text-[#171611] text-center">
+          <p className="text-xs md:text-2xl text-center font-light md:font-medium">
+            Values
+          </p>
+          <div className="mx-8 w-[296px] md:w-[1220px] h-[357px] md:h-[470px]">
+            <p className="text-xs md:text-2xl text-[#171611] text-center font-normal">
               We are tailored to creating a pathbreaking digital assistant for
               both students and young
               <br /> professionals that would help make their journey into
@@ -59,10 +77,121 @@ const Landingpage = () => {
               process into one perfect solution.
             </p>
           </div>
-          <div className="font-bold text-4xl my-10">
+          <div className="font-semibold md:font-bold text-base md:text-4xl my-10">
             Payment <font color="#d38019">Plans</font>
           </div>
-          <div className="relative mb-[100px]">
+          <div className="flex flex-col items-center justify-center md:hidden">
+            <div className="w-[296px] h-[655px] rounded-lg border border-[#c4c4c4] shadow-xl">
+              <div className="flex flex-col items-center justify-center">
+                <div className="w-full h-[60px] border border-b-[#c4c4c4] bg-[#f5f3f1] text-center py-4 text-base font-medium">
+                  Type A
+                </div>
+                <div className="mx-6 mt-2 p-4">
+                  <div className="flex">
+                    <MdCategory size={50} color="#d38019" className="mr-2" />
+                    <div className="flex-col text-xs text-[#171611]">
+                      <p className="font-medium">Category</p>
+                      <p className="font-normal mt-2">
+                        For University students below 30 years of age.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex my-4">
+                    <BsGiftFill size={60} color="#d38019" className="mr-4" />
+                    <div className="flex-col text-xs">
+                      <p className="font-medium">Package</p>
+                      <ul className="list-decimal p-2">
+                        <li>Travel insurance (Visa requirement).</li>
+                        <li className="p-2">
+                          Private health insurance (Required for your visa and
+                          stay in Germany).
+                        </li>
+                        <li className="p-2">
+                          Sim card purchase & consultancy.
+                        </li>
+                        <li className="p-2">10% discount on German school.</li>
+                        <li className="p-2">
+                          Aid in getting BAfoG (A German government grant & loan
+                          for students - not applicable to PHD students).
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="flex">
+                    <GiPriceTag size={60} color="#d38019" className="mr-2" />
+                    <div className="flex-col text-xs">
+                      <p className="font-medium">Price</p>
+                      <p className="font-normal">
+                        39.9 Euro opening fee, then 3.99 Euro monthly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <Link to="/signup">
+                  <div className="flex w-[128px] h-[40px] items-center justify-center bg-[#FFF4E6] rounded-lg border border-[#d38019] text-[#d38019] text-xs font-medium my-4">
+                    Get Started
+                    <BsArrowRight size={15} className="ml-2" />
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="w-[296px] h-[655px] rounded-lg border border-[#c4c4c4] shadow-xl my-10">
+              <div className="flex flex-col items-center justify-center">
+                <div className="w-full h-[60px] border border-b-[#c4c4c4] bg-[#f5f3f1] text-center py-4 text-base font-medium">
+                  Type B
+                </div>
+                <div className="mx-6 mt-2 p-4">
+                  <div className="flex">
+                    <MdCategory size={40} color="#d38019" className="mr-2" />
+                    <div className="flex-col text-xs">
+                      <p className="font-medium">Category</p>
+                      <p className="font-normal">
+                        For University students above 30 years of age, PHD
+                        students, visitors of a studentkolleg.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex my-4">
+                    <BsGiftFill size={40} color="#d38019" className="mr-2" />
+                    <div className="flex-col text-xs">
+                      <p className="font-medium">Package</p>
+                      <ul className="list-decimal p-2">
+                        <li>Travel insurance (Visa requirement).</li>
+                        <li className="p-2">
+                          Private health insurance (Required for your visa and
+                          stay in Germany).
+                        </li>
+                        <li className="p-2">
+                          Sim card purchase & consultancy.
+                        </li>
+                        <li className="p-2">10% discount on German school.</li>
+                        <li className="p-2">
+                          Aid in getting BAfoG (A German government grant & loan
+                          for students - not applicable to PHD students).
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="flex">
+                    <GiPriceTag size={40} color="#d38019" className="mr-2" />
+                    <div className="flex-col text-xs">
+                      <p className="font-medium">Price</p>
+                      <p className="font-normal">
+                        59.9 Euro opening fee, then 4.99 Euro monthly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <Link to="/signup">
+                  <div className="flex w-[128px] h-[40px] items-center justify-center bg-[#FFF4E6] rounded-lg border border-[#d38019] text-[#d38019] text-xs font-medium my-4">
+                    Get Started
+                    <BsArrowRight size={15} className="ml-2" />
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="hidden md:block relative mb-[100px]">
             <div>
               <img src={TypeA} alt="Category A" />
             </div>
@@ -115,7 +244,7 @@ const Landingpage = () => {
               </div>
             </div>
           </div>
-          <div className="relative">
+          <div className="hidden md:block relative">
             <div>
               <img src={TypeB} alt="Category B" />
             </div>
@@ -174,11 +303,8 @@ const Landingpage = () => {
           className="flex items-center justify-center 
         m-4"
         ></div>
-        <div className="flex items-center justify-center font-semibold text-4xl mt-20">
-          Testimonials
-        </div>
         <Testimonials />
-        <div className="flex items-center justify-center font-semibold text-4xl mb-4">
+        <div className="flex items-center justify-center font-semibold text-base md:text-4xl mb-6 md:mb-4">
           Frequently Asked Questions
         </div>
         <AccordionComponent />

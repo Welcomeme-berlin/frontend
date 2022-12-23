@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 // import { Link } from "react-router-dom";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import {
+  AiOutlineClose,
+  AiOutlineMenu,
+  AiOutlineUnorderedList,
+} from "react-icons/ai";
+import { BiHomeAlt } from "react-icons/bi";
+import { BsJournalCheck, BsQuestionCircle } from "react-icons/bs";
 import Logo from "../assets/wmlogo.png";
 
 const Navbar = () => {
@@ -13,16 +19,18 @@ const Navbar = () => {
     <div className="w-full flex justify-between items-center h-20 mx-auto px-4 text-white bg-[#181817]">
       <div className="flex items-center">
         <img src={Logo} alt="logo" className="w-20 h-20" />
-        <p className="font-semibold text-xl">Welcome Me</p>
+        <p className="font-semibold text-xl">
+          Welcome<font color="#DEB37E">Me</font>
+        </p>
       </div>
       <ul className="hidden md:flex text-xl">
-        <li className="p-4">
+        <li className="p-3">
           {/* <Link to="/">Home</Link> */}
           Home
         </li>
-        <li className="p-4">Services</li>
-        <li className="p-4">Plan</li>
-        <li className="p-4">Contact us</li>
+        <li className="p-3">Services</li>
+        <li className="p-3">Plan</li>
+        <li className="p-3">Contact us</li>
       </ul>
       {/* Mobile hamburger */}
       <div onClick={handleNav} className="block md:hidden">
@@ -32,17 +40,36 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] h-full ease-in-out duration-500 bg-white z-10"
+            ? "fixed left-0 right-[-100%] top-20 w-[164px] h-[250px] ease-in-out duration-500 bg-white z-10 rounded-2xl"
             : "fixed left-[-100%]"
         }
       >
-        <h1 className="w-full text-2xl font-bold m-4 pt-4">Logo.</h1>
-        <ul className="mt-20 uppercase text-center">
-          <li className="p-4">Home</li>
-          <li className="p-4">About us</li>
-          <li className="p-4">Contact us</li>
-          <li className="p-4">Login</li>
-          <li className="p-4">Sign up</li>
+        <ul className="mt-4 text-center text-black text-base">
+          <li className="p-3 flex items-center">
+            <span>
+              <BiHomeAlt size={30} className="mr-2" />
+            </span>
+            Home
+          </li>
+          <li className="p-3 flex items-center">
+            <span>
+              <AiOutlineUnorderedList size={30} className="mr-2" />
+            </span>
+            Services
+          </li>
+
+          <li className="p-3 flex items-center">
+            <span>
+              <BsJournalCheck size={30} className="mr-2" />
+            </span>
+            Plans
+          </li>
+          <li className="p-3 flex items-center">
+            <span>
+              <BsQuestionCircle size={30} className="mr-2" />
+            </span>
+            Contact us
+          </li>
         </ul>
       </div>
     </div>
