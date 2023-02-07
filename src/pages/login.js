@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
 import { SiFacebook } from "react-icons/si";
 import { useForm } from "react-hook-form";
 
 const Login = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -14,6 +15,7 @@ const Login = () => {
   const [seePassword, setSeePassword] = useState(false);
   const onSubmit = (data) => {
     console.log(data);
+    navigate("/dashboard");
   };
   const handleToggle = () => {
     setSeePassword(!seePassword);
@@ -26,7 +28,7 @@ const Login = () => {
             Login <font color="#d38019">into your </font> account
           </div>
           <div className="w-[300px] md:w-[400px] relative top-10 my-2 mx-10">
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div>
                 <label
                   htmlFor="email"
@@ -67,14 +69,14 @@ const Login = () => {
                     className="w-full h-10 border-b border-[#d38019] text-gray-700 px-4 py-2 mt-2 focus:outline-none rounded-lg"
                   />
                   {errors.password && (
-                    <p>
+                    <p className="text-red-500 text-xs pt-2">
                       Please check the Password: A valid password should contain
                       one Capital Letter, one Small Letter, and the number of
                       characters should be between 6 to 15
                     </p>
                   )}
                 </div>
-                <div className="text-2xl text-gray-500 absolute top-10 md:top-[62px] right-5">
+                <div className="text-2xl text-gray-500 absolute top-10 md:top-12 right-5">
                   {seePassword === false ? (
                     <AiFillEye onClick={handleToggle} />
                   ) : (
@@ -82,12 +84,12 @@ const Login = () => {
                   )}
                 </div>
               </div>
-              <div className="w-[151px] h-[20px] m-2 font-medium text-black relative left-[130px] underline">
+              <div className="w-[151px] h-[20px] m-2 font-medium text-black relative left-[130px] md:left-[250px] underline">
                 <Link to="/forgotPassword">Forgot Password?</Link>
               </div>
               <div className="mt-6 flex flex-col items-center justify-center">
                 <button
-                  onClick={handleSubmit(onSubmit)}
+                  type="submit"
                   className="w-[300px] md:w-[400px] h-[48px] md:h-[58px] px-4 py-2 tracking-wide text-white text-xl font-medium bg-[#D38019] rounded-lg  focus:outline-none 
                 "
                 >
