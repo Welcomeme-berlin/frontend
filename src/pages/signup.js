@@ -15,17 +15,17 @@ const Signup = () => {
   };
   return (
     <>
-      <div className="w-full h-screen flex items-center justify-center">
-        <div className="w-[710px] flex flex-col border rounded-[20px] bg-white shadow-2xl">
-          <div className="w-[253px] h-[29px] font-bold text-2xl relative top-10 left-[228px]">
+      <div className="w-full h-full flex items-center justify-center">
+        <div className="w-[350px] md:w-[500px] flex flex-col items-center justify-center border rounded-[20px] bg-white shadow-2xl">
+          <div className="w-[253px] h-[29px] font-bold text-lg md:text-2xl relative top-10 text-center">
             Create <font color="#d38019">new </font> account
           </div>
-          <div className="flex flex-col items-center justify-center m-4 relative top-10">
-            <form className=" px-10 py-4">
-              <div className="mb-2">
+          <div className="my-2 md:my-4">
+            <form className="flex flex-col items-center justify-center m-4 relative top-10 w-[300px] md:w-[400px]">
+              <div className="w-full mb-4">
                 <label
                   htmlFor="name"
-                  className=" text-lg font-medium text-black"
+                  className=" text-sm md:text-lg font-medium text-black"
                 >
                   Name
                 </label>
@@ -34,10 +34,10 @@ const Signup = () => {
                   className=" w-full border-b border-[#d38019] text-gray-700 px-4 py-2 mt-2 focus:outline-none rounded-lg"
                 />
               </div>
-              <div className="mt-8 mb-2">
+              <div className="w-full mb-4">
                 <label
                   htmlFor="email"
-                  className=" text-lg font-medium text-black"
+                  className=" text-sm md:text-lg font-medium text-black"
                 >
                   Email
                 </label>
@@ -46,10 +46,10 @@ const Signup = () => {
                   className=" w-full border-b border-[#d38019] text-gray-700 px-4 py-2 mt-2 focus:outline-none rounded-lg"
                 />
               </div>
-              <div className="mt-8 mb-2">
+              <div className="w-full mb-4">
                 <label
                   htmlFor="phone"
-                  className=" text-lg font-medium text-black"
+                  className=" text-sm md:text-lg font-medium text-black"
                 >
                   Phone Number
                 </label>
@@ -58,11 +58,11 @@ const Signup = () => {
                   className=" w-full border border-[#d38019] text-gray-700 px-4 py-2 mt-2 focus:outline-none rounded-lg"
                 />
               </div>
-              <div className="flex flex-wrap -mx-3 mt-6">
+              <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <label
                     htmlFor="dateOfBirth"
-                    className=" text-lg font-medium text-black"
+                    className=" text-sm md:text-lg font-medium text-black"
                   >
                     Date of birth
                   </label>
@@ -74,7 +74,7 @@ const Signup = () => {
                 <div className="w-full md:w-1/2 px-3">
                   <label
                     htmlFor="nationality"
-                    className="text-lg font-medium text-black"
+                    className="text-sm md:text-lg font-medium text-black"
                   >
                     Nationality
                   </label>
@@ -84,11 +84,11 @@ const Signup = () => {
                   />
                 </div>
               </div>
-              <div className="relative">
-                <div className="mt-6 mb-2">
+              <div className="w-full relative">
+                <div className="mb-4">
                   <label
                     htmlFor="password"
-                    className="text-lg font-medium text-black"
+                    className="text-sm md:text-lg font-medium text-black"
                   >
                     Password
                   </label>
@@ -97,7 +97,7 @@ const Signup = () => {
                     className="w-full border-b border-[#d38019] text-gray-700 px-4 py-2 mt-2 focus:outline-none rounded-lg"
                   />
                 </div>
-                <div className="text-2xl text-gray-500 absolute top-12 right-5">
+                <div className="text-2xl text-gray-500 absolute top-10 md:top-12 right-5">
                   {seePassword === false ? (
                     <AiFillEye onClick={handleToggle} />
                   ) : (
@@ -105,11 +105,11 @@ const Signup = () => {
                   )}
                 </div>
               </div>
-              <div className="relative">
-                <div className="mt-6 mb-2">
+              <div className="w-full relative">
+                <div className="mb-4">
                   <label
                     htmlFor="password"
-                    className="text-lg font-medium text-black"
+                    className="text-sm md:text-lg font-medium text-black"
                   >
                     Confirm Password
                   </label>
@@ -118,7 +118,7 @@ const Signup = () => {
                     className="w-full border-b border-[#d38019] text-gray-700 px-4 py-2 mt-2 focus:outline-none rounded-lg"
                   />
                 </div>
-                <div className="text-2xl text-gray-500 absolute top-12 right-5">
+                <div className="text-2xl text-gray-500 absolute top-10 md:top-12 right-5">
                   {seeConfirmPassword === false ? (
                     <AiFillEye onClick={handleToggle1} />
                   ) : (
@@ -127,7 +127,7 @@ const Signup = () => {
                 </div>
               </div>
               <div className="mt-8 flex flex-col items-center justify-center">
-                <button className="w-[500px] h-[50px] px-4 py-2 tracking-wide text-white text-xl font-medium bg-[#D38019] rounded-md  focus:outline-none ">
+                <button className="w-[250px] md:w-[400px] h-[40px] md:h-[50px] px-4 py-2 tracking-wide text-white text-lg md:text-xl font-medium bg-[#D38019] rounded-md  focus:outline-none ">
                   Sign up
                 </button>
                 {/* <p className="mt-2 text-[16px] font-medium">or</p>
@@ -143,12 +143,12 @@ const Signup = () => {
             </form>
           </div>
           <div className="flex items-center justify-center my-10">
-            <p className="text-[16px] text-[#5f5e5b] font-medium">
+            <p className="text-sm md:text-base text-[#5f5e5b] font-medium">
               Already have an account?
             </p>
             <div
               className="
-            ml-2 font-bold text-xl text-[#d38019]"
+            ml-2 font-bold text-lg md:text-xl text-[#d38019]"
             >
               <Link to="/login">Login</Link>
             </div>

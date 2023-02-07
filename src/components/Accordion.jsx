@@ -34,11 +34,11 @@ const AccordionComponent = () => {
       <Accordion
         open={open === 1}
         icon={<Icon id={1} open={open} />}
-        className="mx-4 my-4 lg:flex flex-col items-center justify-center"
+        className="mx-4 my-4 lg:flex flex-col items-center justify-center text-xs md:text-base"
       >
         <AccordionHeader
           onClick={() => handleOpen(1)}
-          className="w-[1200px] h-[100px] border rounded-[30px] p-10 shadow-lg font-medium text-[#6d7276] uppercase"
+          className="w-[320px] md:w-[1200px] h-[31.89px] md:h-[100px] border rounded-[30px] p-10 shadow-lg font-medium text-[#6d7276] uppercase"
         >
           01 Housing
         </AccordionHeader>
@@ -53,11 +53,11 @@ const AccordionComponent = () => {
       <Accordion
         open={open === 2}
         icon={<Icon id={2} open={open} />}
-        className="mx-4 my-4 lg:flex flex-col items-center justify-center"
+        className="mx-4 my-4 lg:flex flex-col items-center justify-center text-xs md:text-base"
       >
         <AccordionHeader
           onClick={() => handleOpen(2)}
-          className="w-[1200px] h-[100px] border rounded-[30px] p-10 shadow-lg font-medium text-[#6d7276] uppercase"
+          className="w-[320px] md:w-[1200px] h-[31.89px] md:h-[100px] border rounded-[30px] p-10 shadow-lg font-medium text-[#6d7276] uppercase"
         >
           02 Insurance
         </AccordionHeader>
@@ -72,11 +72,11 @@ const AccordionComponent = () => {
       <Accordion
         open={open === 3}
         icon={<Icon id={3} open={open} />}
-        className="mx-4 my-4 lg:flex flex-col items-center justify-center"
+        className="mx-4 my-4 lg:flex flex-col items-center justify-center text-xs md:text-base"
       >
         <AccordionHeader
           onClick={() => handleOpen(3)}
-          className="w-[1200px] h-[100px] border rounded-[30px] p-10 shadow-lg font-medium text-[#6d7276] uppercase"
+          className="w-[320px] md:w-[1200px] h-[31.89px] md:h-[100px] border rounded-[30px] p-10 shadow-lg font-medium text-[#6d7276] uppercase"
         >
           03 German bank account
         </AccordionHeader>
