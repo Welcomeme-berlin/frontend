@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AiOutlineLock } from "react-icons/ai";
 import {
   BsArrowLeftShort,
@@ -17,29 +17,29 @@ import Person from "../assets/profile.png";
 const Layout = ({ children }) => {
   const [open, setOpen] = useState(true);
   const [submenuOpen, setSubmenuOpen] = useState(false);
+
   const Menus = [
     { title: "Overview", path: "/dashboard" },
     {
       title: "My apartments",
       icon: <BiHomeAlt />,
-      // path: "/application",
       submenu: true,
       submenuItems: [
         {
           title: "Rent apartments",
-          path: "https://premiumfcubs.premiumtrustbank.com/FCJNeoWeb",
+          path: "/rent-apartments",
         },
         {
           title: "List apartments",
-          path: "http://obiee.premiumtrustbank.com:9502/xmlpserver",
+          path: "/list-apartments",
         },
         {
           title: "Manage apartments",
-          path: "https://172.18.5.50/",
+          path: "/manage-apartments",
         },
         {
           title: "Transactions",
-          path: "https://172.18.5.50/",
+          path: "/transactions",
         },
       ],
     },
@@ -89,12 +89,14 @@ const Layout = ({ children }) => {
         {menu.submenu && submenuOpen && open && (
           <ul className="flex flex-col items-center p-2">
             {menu.submenuItems.map((submenuItem, index) => (
-              <li
-                key={index}
-                className="flex items-center gap-x-4 cursor-pointer p-2 px-5 text-white font-medium rounded-md mt-2"
-              >
-                {submenuItem.title}
-              </li>
+              <Link to={submenuItem.path}>
+                <li
+                  key={index}
+                  className="flex items-center gap-x-4 cursor-pointer p-2 px-5 text-white font-medium rounded-md mt-2"
+                >
+                  {submenuItem.title}
+                </li>
+              </Link>
             ))}
           </ul>
         )}
@@ -149,7 +151,8 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </div>
-      <main className="w-full h-full mx-4 my-10 bg-gray-50">{children}</main>
+      <main className="w-full h-full px-10 my-10">{children}</main>
+      {/* bg-gray-50 - Removed from the children classname above */}
     </div>
   );
 };

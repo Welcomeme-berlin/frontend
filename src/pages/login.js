@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
-import { FcGoogle } from 'react-icons/fc';
-import { SiFacebook } from 'react-icons/si';
-import { useForm } from 'react-hook-form';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
+import { FcGoogle } from "react-icons/fc";
+import { SiFacebook } from "react-icons/si";
+import { useForm } from "react-hook-form";
 
 const Login = () => {
   const {
@@ -21,30 +21,27 @@ const Login = () => {
   return (
     <>
       <div className="w-full h-screen flex items-center justify-center">
-        <div className="w-[500px] h-[650px] flex flex-col border rounded-[20px] bg-white shadow-2xl">
-          <div
-            className="text-center font-bold text-2xl relative top-10"
-            id="test-id"
-          >
+        <div className="w-[350px] md:w-[450px] h-[500px] md:h-[600px] flex flex-col items-center justify-center border rounded-[20px] bg-white shadow-2xl">
+          <div className="text-center font-bold text-lg md:text-2xl relative top-4 md:top-10">
             Login <font color="#d38019">into your </font> account
           </div>
-          <div className="w-[400px] relative top-20 my-2 mx-10">
-            <form className="flex flex-col items-center justify-center">
+          <div className="w-[300px] md:w-[400px] relative top-10 my-2 mx-10">
+            <form>
               <div>
                 <label
                   htmlFor="email"
-                  className="text-lg font-medium text-black"
+                  className="text-sm md:text-lg font-medium text-black"
                 >
                   Email
                 </label>
                 <input
                   type="email"
-                  {...register('email', {
+                  {...register("email", {
                     required: true,
                     pattern:
                       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
                   })}
-                  className="w-[400px] h-10 border-b border-[#d38019] text-gray-700 px-4 py-2 mt-2 focus:outline-none rounded-lg"
+                  className="w-full h-10 border-b border-[#d38019] text-gray-700 px-4 py-2 mt-2 focus:outline-none rounded-lg"
                 />
                 {errors.email && (
                   <p>
@@ -57,17 +54,17 @@ const Login = () => {
                 <div className="my-4">
                   <label
                     htmlFor="password"
-                    className="text-lg font-medium text-black"
+                    className="text-sm md:text-lg font-medium text-black"
                   >
                     Password
                   </label>
                   <input
-                    type={seePassword === false ? 'password' : 'text'}
-                    {...register('password', {
+                    type={seePassword === false ? "password" : "text"}
+                    {...register("password", {
                       required: true,
                       pattern: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$/,
                     })}
-                    className="w-[400px] h-10 border-b border-[#d38019] text-gray-700 px-4 py-2 mt-2 focus:outline-none rounded-lg"
+                    className="w-full h-10 border-b border-[#d38019] text-gray-700 px-4 py-2 mt-2 focus:outline-none rounded-lg"
                   />
                   {errors.password && (
                     <p>
@@ -77,7 +74,7 @@ const Login = () => {
                     </p>
                   )}
                 </div>
-                <div className="text-2xl text-gray-500 absolute top-[62px] right-5">
+                <div className="text-2xl text-gray-500 absolute top-10 md:top-[62px] right-5">
                   {seePassword === false ? (
                     <AiFillEye onClick={handleToggle} />
                   ) : (
@@ -85,14 +82,14 @@ const Login = () => {
                   )}
                 </div>
               </div>
-              <div className="w-[151px] h-[20px] m-4 font-medium text-black relative left-[150px] underline">
+              <div className="w-[151px] h-[20px] m-2 font-medium text-black relative left-[130px] underline">
                 <Link to="/forgotPassword">Forgot Password?</Link>
               </div>
               <div className="mt-6 flex flex-col items-center justify-center">
                 <button
                   onClick={handleSubmit(onSubmit)}
-                  className="w-[450px] h-[58px] px-4 py-2 tracking-wide text-white text-xl font-medium bg-[#D38019] rounded-lg  focus:outline-none 
-                relative left-4"
+                  className="w-[300px] md:w-[400px] h-[48px] md:h-[58px] px-4 py-2 tracking-wide text-white text-xl font-medium bg-[#D38019] rounded-lg  focus:outline-none 
+                "
                 >
                   Log in
                 </button>
@@ -114,7 +111,7 @@ const Login = () => {
               </div>
             </form>
           </div>
-          <div className="flex items-center justify-center mt-[120px]">
+          <div className="flex items-center justify-center mt-20 md:mt-[100px]">
             <p className="text-[16px] text-[#5f5e5b] font-medium">
               Yet to have an account?
             </p>
